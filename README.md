@@ -1,6 +1,6 @@
-#PennQuater 1.0
+# PennQuater 1.0
 
-##This is the source code for Penn Quater Website 
+## This is the source code for Penn Quater Website 
 
 To put in on the sever, just copy the seven HTML files and css, img and js folder
 
