@@ -1,0 +1,51 @@
+
+/***********
+ * general *
+ ***********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    /*set the root-font-size to percentage */
+    /*font-size: 10px; 10/16=0.625 */
+    font-size: 62.5%; 
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-text;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+
+    @media print {
+        font-size: 2rem;
+    }
+}
+
+.wrapper {
+    max-width: 86.7rem;
+    margin: 0 auto;
+ 
+    /*
+    //for the phone version max-width is 320px
+    @include respond(phone){
+        max-width: 32rem;
+    }*/
+
+
+}

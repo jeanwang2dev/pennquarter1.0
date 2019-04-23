@@ -1,0 +1,32 @@
+/*****
+Main Body List
+****/
+
+.list {
+
+    &__main {
+        margin-left: 3rem;
+    }
+
+    &__member {
+
+        list-style: none;
+        font-size: 1.4rem;
+        font-style: italic;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    &__address {
+        list-style: none;
+    }
+
+    &__contact {
+        font-size: 1.4rem;
+        list-style: none;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+

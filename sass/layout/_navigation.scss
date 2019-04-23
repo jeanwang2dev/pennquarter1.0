@@ -1,0 +1,180 @@
+/**************
+ * navigation *
+ *************/
+
+ .navigation{
+
+    //margin: 0 .2rem;
+
+    @media print {
+        display: none;
+    }
+
+	margin: 1rem 0 0 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    position: relative; 
+    margin-bottom: 1rem;
+
+    @include respond(phone){
+        border-radius: none;
+        box-shadow: none;
+    }
+
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__button {  
+
+        height: 4rem;
+        width: 4rem;
+        background-color: $color-primary;
+        border: 1px solid #9adce7;
+        border-radius: 4px;
+        display:inline-block;
+        position: absolute;
+        top: -4.7rem; //.3rem;
+        right: 1.5rem;
+        opacity: 0;
+        
+        
+        @include respond(phone){
+           opacity: 1;
+        }
+
+        @include respond(tablet){
+            opacity: 1;
+         }
+    }
+
+    .fa-bars {
+        font-size: 2.5rem;
+        color: #9adce7;
+
+        @include absCenter;
+    }   
+
+
+    &__list {
+
+        display: flex;
+        list-style-type: none;
+
+        &:not(:first-child){
+            @include respond(phone){
+                display:none;
+            }
+
+            @include respond(tablet){
+                display:none;
+            }
+        }
+
+    }
+
+    &__checkbox:checked ~ &__list {
+
+        @include respond(phone){
+            display: block;        
+            padding: 0 1.5rem;
+            margin: 0 auto;
+        }
+
+        @include respond(tablet){
+            display: block;             
+        }
+    }
+
+    &__item {
+        flex-grow:1;
+        text-align: center;  
+
+        &.activated a,
+        &.activated a:hover {
+            background-color: $color-nav-secondary;
+            color: #fff;
+            background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 51%);
+        }
+
+        &:first-child a {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px; 
+            
+            @include respond(tablet){
+                margin-left: 2px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            @include respond(phone){
+                margin-left: 0;
+            }
+            
+        }
+
+        &:last-child a {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+             
+            @include respond(tablet){
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            
+        } 
+
+        &:not(:first-child) a {
+            border-left: 2px solid #ecf0f1; 
+
+            @include respond(phone){
+                border-left: none;
+            }
+
+        }
+
+        @include respond(phone){
+            //border-bottom: 1px solid #fff;
+
+        }
+
+    }
+
+    &__link {
+        display: block;
+        padding: 2px 0;
+        color: inherit;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+        color: #fff;
+        background-color: $color-nav-pri;  
+        background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 51%);
+
+        &:hover {
+            background-color: $color-nav-secondary; 
+            color: $color-white;
+            background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 51%);
+        }
+
+
+        @include respond(tablet){
+            border-bottom: 1px solid #fff;
+            background-color: $color-nav-pri;
+            background-image: none; 
+
+        }        
+
+        @include respond(phone){
+            background-color: $color-nav-pri; 
+            background-image: none; 
+            border-radius: none;
+            padding: .4rem 0;
+        }
+
+
+
+    }
+
+}

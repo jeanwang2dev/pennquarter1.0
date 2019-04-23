@@ -1,0 +1,62 @@
+/* the form on contact form */
+
+.form {
+
+    margin: 2.5rem 0;
+
+    &__group {
+        position: relative;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__input{
+        font-size: 1.4rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem 1.5rem;
+        border-radius: 2px;
+        border: 2px solid #CCC;
+        //border-top: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            border-bottom: 3px solid $color-primary;
+
+            &:invalid {
+                border-bottom: 3px solid orange;
+            }
+        }
+
+
+        &::-webkit-input-placeholder {
+            color: #CCC;
+        }
+
+    }
+
+
+    &__label{
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+       position: absolute;
+       top: -.8rem;
+       left: -.8rem;;
+    }
+
+    
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(4rem);
+    }
+}

@@ -1,0 +1,48 @@
+ /**************
+ * grid *
+ *************/
+
+ .row {
+    max-width: 100%;
+    margin: 0 auto;
+
+   @include respond(desktop){
+       //max-width: 32rem;
+       padding: 0 1.5rem;
+   }
+
+    &:not(:last-child){
+       margin-bottom: $gutter-vertical;
+   }
+
+   @include clearfix;
+
+   [class^="col-"]{
+       float: left;
+       //background-color: $color-btn;
+
+       &:not(:last-child){
+           margin-right: $gutter-horizontal;
+       }
+
+   }
+
+   .col-1-of-12 {
+       background-color: green;
+    }
+
+    @for $i from 1 through 11 {
+        .col-#{$i}-of-12 { 
+            width: calc( #{$i} * (100% - 11 * #{$gutter-horizontal}) /12  + (#{$i} - 1) *  #{$gutter-horizontal} );
+        }
+    }
+
+    @media only screen and (max-width: 37.5em){ 
+
+            @for $i from 1 through 11{
+                .col-#{$i}-of-12 { width: 100%; }
+            }
+
+    }
+
+}
