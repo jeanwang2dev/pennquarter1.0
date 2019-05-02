@@ -204,10 +204,11 @@ Main Body List
 
 .list__member {
   list-style: none;
-  font-size: 1.4rem;
-  font-style: italic;
+  font-size: 1.6rem;
   line-height: 1.2;
   margin-bottom: 2rem; }
+  .list__member li:first-child {
+    font-weight: bold; }
 
 .list__address {
   list-style: none; }
