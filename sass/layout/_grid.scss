@@ -5,10 +5,10 @@
  .row {
     max-width: 100%;
     margin: 0 auto;
+    //padding: .8rem 1rem;
 
    @include respond(desktop){
-       //max-width: 32rem;
-       padding: 0 1.5rem;
+       padding: 0 .8rem;
    }
 
     &:not(:last-child){
