@@ -200,7 +200,8 @@ body {
 Main Body List
 ****/
 .list__main {
-  margin-left: 3rem; }
+  margin-left: 3rem;
+  margin-bottom: 3rem; }
 
 .list__member {
   list-style: none;
