@@ -212,7 +212,8 @@ Main Body List
     font-weight: bold; }
 
 .list__address {
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 3rem; }
 
 .list__contact {
   font-size: 1.6rem;
