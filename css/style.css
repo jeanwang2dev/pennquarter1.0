@@ -259,7 +259,7 @@ Photos
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      border-bottom: 3px solid #312595; }
+      border-bottom: 3px solid #0d008d; }
       .form__input:focus:invalid {
         border-bottom: 3px solid orange; }
     .form__input::-webkit-input-placeholder {
@@ -332,7 +332,7 @@ Photos
   .navigation__button {
     height: 4rem;
     width: 4rem;
-    background-color: #312595;
+    background-color: #0d008d;
     border: 1px solid #897BC4;
     border-radius: 4px;
     display: inline-block;
@@ -500,7 +500,7 @@ footer
 .footer {
   margin-top: 3rem;
   color: #c8c1e8;
-  background-color: #312595; }
+  background-color: #0d008d; }
   @media print {
     .footer {
       display: none; } }
