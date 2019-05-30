@@ -62,7 +62,8 @@ body {
 .heading__home {
   font-size: 1.8rem;
   font-weight: 800;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  text-align: center; }
 
 .heading__news {
   font-size: 2rem;
