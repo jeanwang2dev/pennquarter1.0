@@ -291,13 +291,13 @@ Photos
   background-size: cover; }
   @media only screen and (max-width: 48em) {
     .header {
-      background: url("../img/banner-phone.jpg") no-repeat;
+      background: url("../img/banner-tablet.jpg") no-repeat;
       background-size: contain;
       height: 35.6rem; } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-size: contain;
-      height: 29rem; } }
+      background: url("../img/banner-phone.jpg") no-repeat;
+      background-size: contain; } }
   .header__link {
     position: absolute;
     top: 6%;
@@ -338,12 +338,13 @@ Photos
     border-radius: 4px;
     display: inline-block;
     position: absolute;
-    top: -4.7rem;
-    right: 1.5rem;
+    top: -12.5rem;
+    left: 1.5rem;
     opacity: 0; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 29.9em) {
       .navigation__button {
-        opacity: 1; } }
+        opacity: 1;
+        top: -19rem; } }
     @media only screen and (max-width: 48em) {
       .navigation__button {
         opacity: 1; } }

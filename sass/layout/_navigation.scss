@@ -35,18 +35,21 @@
         border-radius: 4px;
         display:inline-block;
         position: absolute;
-        top: -4.7rem; //.3rem;
-        right: 1.5rem;
+        top: -12.5rem;; //.3rem;
+        left: 1.5rem;
         opacity: 0;
+
+        @include respond(smallphone){
+            opacity: 1;
+            top: -19rem;
+         }
         
-        
-        @include respond(phone){
-           opacity: 1;
+        @include respond(tablet){
+        //@media only screen and (min-width: 29.9em) and (max-width: 48em){ 
+            opacity: 1;
+            //top: -11.75rem;
         }
 
-        @include respond(tablet){
-            opacity: 1;
-         }
     }
 
     .fa-bars {

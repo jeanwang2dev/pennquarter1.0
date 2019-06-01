@@ -11,16 +11,15 @@
 
 
     @include respond(tablet){
-        background: url("../img/banner-phone.jpg") no-repeat;
+        background: url("../img/banner-tablet.jpg") no-repeat;
         background-size: contain;
         height:35.6rem;
     } 
  
     
     @include respond(phone){
-        //background: url("../img/banner.jpg") no-repeat;
+        background: url("../img/banner-phone.jpg") no-repeat;
         background-size: contain;
-        height:29rem;
     } 
      
 
