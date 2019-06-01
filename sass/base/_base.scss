@@ -49,3 +49,20 @@ body {
 
 
 }
+
+main {
+
+    @include respond(smallphone){
+        margin-top: -8rem;
+    }
+
+    @media only screen and (min-width: 29.9em) and (max-width: 37.5em){
+        margin-top: -6rem;
+    }
+
+    @media only screen and (min-width: 37.5em) and (max-width: 48em){ 
+        margin-top: -2rem;
+    }
+
+
+}

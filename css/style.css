@@ -56,6 +56,18 @@ body {
         max-width: 32rem;
     }*/ }
 
+@media only screen and (max-width: 29.9em) {
+  main {
+    margin-top: -8rem; } }
+
+@media only screen and (min-width: 29.9em) and (max-width: 37.5em) {
+  main {
+    margin-top: -6rem; } }
+
+@media only screen and (min-width: 37.5em) and (max-width: 48em) {
+  main {
+    margin-top: -2rem; } }
+
 /*****
   Typography
  ******/
@@ -293,7 +305,7 @@ Photos
     .header {
       background: url("../img/banner-tablet.jpg") no-repeat;
       background-size: contain;
-      height: 35.6rem; } }
+      height: 65vh; } }
   @media only screen and (max-width: 37.5em) {
     .header {
       background: url("../img/banner-phone.jpg") no-repeat;

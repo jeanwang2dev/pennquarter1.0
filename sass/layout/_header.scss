@@ -13,7 +13,8 @@
     @include respond(tablet){
         background: url("../img/banner-tablet.jpg") no-repeat;
         background-size: contain;
-        height:35.6rem;
+        //height:29rem;
+        height:65vh;
     } 
  
     
