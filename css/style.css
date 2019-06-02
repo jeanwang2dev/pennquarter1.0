@@ -328,11 +328,10 @@ Photos
  * navigation *
  *************/
 .navigation {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  position: relative;
-  margin-bottom: 1rem; }
+  position: relative; }
   @media print {
     .navigation {
       display: none; } }
@@ -559,20 +558,5 @@ news.html
 ********/
 .section-left {
   padding: 1rem 0 0 1.8rem; }
-
-/*
-.section__map{
-    padding: 1rem 1rem;
-}*/
-/*
-.pqmap {
-    width:100%;
-    height: 30rem;
-
-}*/
-/* make the headline comes in first in mobile view on home page */
-.section__home .row:first-child .col-7-of-12 {
-  display: flex;
-  justify-content: center; }
 
 /*# sourceMappingURL=../sass/maps/style.css/style.css.map */
