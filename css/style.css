@@ -384,7 +384,7 @@ Photos
     @media only screen and (max-width: 37.5em) {
       .navigation__list:not(:first-child) {
         display: none; } }
-    @media only screen and (min-width: 37.49em) and (max-width: 48em) {
+    @media only screen and (max-width: 48em) {
       .navigation__list:not(:first-child) {
         display: none; } }
   @media only screen and (max-width: 37.5em) {
@@ -392,7 +392,7 @@ Photos
       display: block;
       padding: 0 1.5rem;
       margin: 0 auto; } }
-  @media only screen and (min-width: 37.49em) and (max-width: 48em) {
+  @media only screen and (max-width: 48em) {
     .navigation__checkbox:checked ~ .navigation__list {
       display: block; } }
   .navigation__item {
@@ -440,7 +440,7 @@ Photos
       background-color: #6c5bb6;
       color: #FFF;
       background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 51%); }
-    @media only screen and (min-width: 37.49em) and (max-width: 48em) {
+    @media only screen and (max-width: 48em) {
       .navigation__link {
         border-bottom: 1px solid #fff;
         background-color: #312595;

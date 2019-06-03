@@ -84,7 +84,7 @@
                 display:none;
             }
 
-            @include respond(tablet){
+            @include respond(mobile){
                 display:none;
             }
         }
@@ -99,7 +99,7 @@
             margin: 0 auto;
         }
 
-        @include respond(tablet){
+        @include respond(mobile){
             display: block;       
         }
     }
@@ -176,7 +176,7 @@
         }
 
 
-        @include respond(tablet){
+        @include respond(mobile){
             border-bottom: 1px solid #fff;
             background-color: $color-nav-pri;
             background-image: none; 
