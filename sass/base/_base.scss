@@ -40,29 +40,28 @@ body {
 .wrapper {
     max-width: 86.7rem;
     margin: 0 auto;
- 
-    /*
-    //for the phone version max-width is 320px
-    @include respond(phone){
-        max-width: 32rem;
-    }*/
-
-
 }
 
 main {
 
-    @include respond(smallphone){
-        margin-top: -8rem;
+    @include respond(tablet){
+        margin-top: 2rem;
     }
 
-    @media only screen and (min-width: 29.9em) and (max-width: 37.5em){
+    @include respond(mediumphone){
         margin-top: -6rem;
     }
 
-    @media only screen and (min-width: 37.5em) and (max-width: 48em){ 
-        margin-top: -2rem;
+    @include respond(smallphone){
+        margin-top: -12rem;
+    }
+
+    @include respond(xsmallphone){
+        margin-top: -25rem;
     }
 
 
+
+
+ 
 }

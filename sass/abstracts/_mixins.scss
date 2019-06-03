@@ -22,19 +22,38 @@ Force an Element To Self-Clear its Children
 //MEDIA QUERY MANAGER
 @mixin respond($breakpoint) {
 
+    //320px /16px = 20
+    @if $breakpoint == xsmallphone {
+        @media only screen and (max-width: 20em) { @content };
+    }
+
     //479px /16px = 29.9
     @if $breakpoint == smallphone {
-        @media only screen and (max-width: 29.9em) { @content };
+        @media only screen and (min-width: 19.99em) and (max-width: 29.9em) { @content };
+        //@media only screen and (max-width: 29.9em) { @content };
+    }
+
+    @if $breakpoint == mediumphone {
+        //@media only screen and (max-width: 37.5em) { @content };
+        @media only screen and (min-width: 29.8em) and (max-width: 37.5em) { @content };
     }
 
     //600px / 16px = 37.5
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };
+        @media only screen and (max-width: 37.5em) { @content };        
     }
+
 
     //768px / 16px = 48
     @if $breakpoint == tablet {
+        //@media only screen and (max-width: 48em) { @content };
+        @media only screen and (min-width: 37.49em) and (max-width: 48em) { @content };
+    }
+
+    //768px / 16px = 48
+    @if $breakpoint == mobile {
         @media only screen and (max-width: 48em) { @content };
+        //@media only screen and (min-width: 37.49em) and (max-width: 48em) { @content };
     }
 
     //867px / 16px ~ 54.19
