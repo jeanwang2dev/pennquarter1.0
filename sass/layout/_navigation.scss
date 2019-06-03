@@ -52,15 +52,11 @@
         left: 1.5rem;
         opacity: 0;
 
-        @include respond(smallphone){
+        @include respond(tablet){
             opacity: 1;
         }
 
-        @include respond(phone){
-            opacity: 1;
-        }
-        
-        @include respond(tablet){
+        @include respond(mobile){
             opacity: 1;
         }
 

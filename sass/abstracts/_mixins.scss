@@ -24,41 +24,41 @@ Force an Element To Self-Clear its Children
 
     //320px /16px = 20
     @if $breakpoint == xsmallphone {
-        @media only screen and (max-width: 20em) { @content };
+        @media only screen and (max-width: 320px) { @content };
     }
 
     //479px /16px = 29.9
     @if $breakpoint == smallphone {
-        @media only screen and (min-width: 19.99em) and (max-width: 29.9em) { @content };
+        @media only screen and (min-width: 321px) and (max-width: 479px) { @content };
         //@media only screen and (max-width: 29.9em) { @content };
     }
 
     @if $breakpoint == mediumphone {
         //@media only screen and (max-width: 37.5em) { @content };
-        @media only screen and (min-width: 29.8em) and (max-width: 37.5em) { @content };
+        @media only screen and (min-width: 480px) and (max-width: 600px) { @content };
     }
 
     //600px / 16px = 37.5
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };        
+        @media only screen and (max-width: 600px) { @content };        
     }
 
 
     //768px / 16px = 48
     @if $breakpoint == tablet {
         //@media only screen and (max-width: 48em) { @content };
-        @media only screen and (min-width: 37.49em) and (max-width: 48em) { @content };
+        @media only screen and (min-width: 601px) and (max-width: 768px) { @content };
     }
 
     //768px / 16px = 48
     @if $breakpoint == mobile {
-        @media only screen and (max-width: 48em) { @content };
+        @media only screen and (max-width:768px) { @content };
         //@media only screen and (min-width: 37.49em) and (max-width: 48em) { @content };
     }
 
     //867px / 16px ~ 54.19
     @if $breakpoint == desktop {
-        @media only screen and (max-width: 54.19em) { @content };
+        @media only screen and (max-width: 876px) { @content };
     }
 
 }
