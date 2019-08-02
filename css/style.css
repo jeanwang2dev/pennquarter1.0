@@ -80,6 +80,10 @@ body {
   font-size: 2rem;
   font-weight: 700; }
 
+.heading__info {
+  font-size: 2.4rem;
+  font-weight: 700; }
+
 .heading__join, .heading__contact {
   font-size: 2rem;
   font-weight: 400; }
@@ -233,6 +237,20 @@ Main Body List
   line-height: 1.2;
   margin-bottom: 2rem; }
 
+.list__tempinfo {
+  margin: 1.5rem 0;
+  list-style: none;
+  font-size: 1.6rem; }
+  .list__tempinfo li:first-child {
+    font-weight: bold;
+    font-size: 2rem; }
+
+.red {
+  color: #a52828; }
+
+.info-vip {
+  font-weight: bold; }
+
 /******
 Photos
  *******/
@@ -290,6 +308,9 @@ Photos
     opacity: 0;
     visibility: hidden;
     transform: translateY(4rem); }
+
+.green {
+  color: green; }
 
 /***********
  * header *

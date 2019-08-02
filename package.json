@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass --source-map sass/maps/style.css sass/main.scss css/style.css -w ",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "npm-run-all --parallel watch:sass"
   },
   "author": "Jean(Yijing) Wang",
   "license": "ISC",

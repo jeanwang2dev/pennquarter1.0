@@ -21,7 +21,7 @@ Main Body List
             font-weight: bold;
         }
     }
-
+ 
     &__address {
         list-style: none;
         margin-bottom: 3rem;
@@ -33,6 +33,25 @@ Main Body List
         line-height: 1.2;
         margin-bottom: 2rem;
     }
+
+    &__tempinfo {
+        margin: 1.5rem 0;
+        list-style: none;
+        font-size: 1.6rem;
+
+        li:first-child{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+    }
 } 
 
+.red {
+    color: rgb(165, 40, 40);
+}
+
+.info-vip {
+    font-weight: bold;
+}
 
