@@ -11,3 +11,6 @@ npm install
 npm run start
 ```
 P.S. you need to install live-server to be able to run the script
+
+### Update the README file
+### Update the README file again
